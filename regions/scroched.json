@@ -1,0 +1,14 @@
+{
+    "rarity": 4,
+    "name": "The End",
+    "color": "#9BEE61",
+    "landBiomes": [
+        "endscroched","endplains"
+    ],
+    "seaBiomes": [
+        "endplains"
+    ],
+    "shoreBiomes": [
+        "endplains"
+    ]
+}

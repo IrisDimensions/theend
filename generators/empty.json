@@ -1,0 +1,13 @@
+{
+    "interpolator": {"function": "NONE"},
+    "seed": 7246661,
+    "composite": [{
+        "style": {
+            "style": "IRIS_DOUBLE",
+            "zoom": 3
+
+
+        },
+        "seed": 10056
+    }]
+}

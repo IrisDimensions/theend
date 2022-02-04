@@ -1,0 +1,14 @@
+{
+
+    "name": "The End Void",
+    "color": "#9BEE61",
+    "landBiomes": [
+        "endvoid"
+    ],
+    "seaBiomes": [
+        "endvoid"
+    ],
+    "shoreBiomes": [
+        "endplains"
+    ]
+}

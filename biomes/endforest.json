@@ -1,0 +1,119 @@
+{
+    "name": "End Forest",
+    "vanillaDerivative": "THE_END",
+    "derivative": "THE_END",
+    "color": "#996DD8",
+    "customDerivitives": [
+        {
+            "id": "purple",
+            "foliageColor": "#996DD8",
+            "waterColor": "#736D87",
+            "grassColor": "#996DD8",
+            "category": "forest"
+        }
+    ],
+    "effects": [{"particleEffect": "ASH"}],
+    "layers":
+    [
+            {
+                "palette":
+                [
+                    {"block": "minecraft:grass_block"},{"block": "minecraft:warped_nylium"}, {"block": "minecraft:stripped_crimson_hyphae"}
+                ]
+                },
+                {
+                    "minHeight": 1,
+                    "maxHeight": 2,
+                    "palette": [{"block": "minecraft:dirt"}]
+                },
+                {
+                    "minHeight": 1,
+                    "maxHeight": 111,
+                    "palette": [{"block": "minecraft:end_stone"}]
+                }
+    ],
+    "decorators":
+    [
+        {
+            "chance": 0.009,
+            "variance": {"style": "STATIC"},
+            "zoom": 0.02,
+            "palette": [
+                {"block": "minecraft:allium"},
+                {"block": "minecraft:cornflower"}
+            ],
+            "style": {"style": "STATIC"}
+        },
+        {
+            "chance": 0.016,
+            "variance": {"style": "STATIC"},
+            "zoom": 0.2,
+            "palette": [
+                {"block": "minecraft:large_fern"},
+                {"block": "minecraft:tall_grass"}
+            ],
+            "style": {"style": "STATIC"}
+        },
+        {
+            "chance": 0.011,
+            "variance": {"style": "STATIC"},
+            "zoom": 0.3,
+            "palette": [
+                {"block": "minecraft:amethyst_cluster"},
+                {"block": "minecraft:large_amethyst_bud"},
+                {"block": "minecraft:small_amethyst_bud"}
+            ],
+            "style": {"style": "STATIC"}
+        }
+    ],
+    "generators":
+    [
+        {
+            "generator": "empty",
+            "min": -4,
+            "max": 30
+        }
+
+    ],
+    "style": {"style": "STATIC"},
+    "objects":
+    [
+        {
+            "chance": 1,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "max": 360,
+                    "min": 0
+                }
+            },
+            "trees":
+            [{
+                "sizes":
+                [{
+                    "depth": 1,
+                    "width": 1
+                }],
+                "treeTypes": [
+                    "TREE",
+                    "BIG_TREE"
+                ]
+            }],
+            "place":
+            [
+                "trees/oak/test"
+            ]
+        }
+    ],
+    "biomeZoom": 2,
+    "biomeStyle": {"style": "SIMPLEX"},
+    "wall": {
+        "style": {"style": "STATIC"},
+        "palette": [
+            {"block": "minecraft:obsidian"},
+            {"block": "minecraft:crying_obsidian"}
+        ]
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "name": "theend",
+    "fluidHeight": 64,
+    "environment": "THE_END",
+    "regions": ["fungi","void","forest","scroched"],
+    "bedrock": false,
+    "rockPalette": {"palette": [{"block": "minecraft:void_air"}]},
+    "noiseModificationFromFeatures": false,
+    "postProcessCaves": true,
+    "postProcessing": true,
+    "useMantle": true,
+
+    "continentalStyle": {
+        "style": "IRIS",
+        "zoom": 22
+
+    },
+    "carving": {"caves": [
+            {
+            "cave": "volcanic/main",
+            "rarity": 4,
+            "breakSurface": true,
+            "caveStartHeight": {
+                "max": 70,
+                "min": 30,
+                "style": {"style": "VASCULAR"}
+            }
+        }]}
+}

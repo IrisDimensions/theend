@@ -1,0 +1,32 @@
+{
+    "name": "End Void",
+    "vanillaDerivative": "PLAINS",
+    "derivative": "PLAINS",
+    "color": "#996DD8",
+    "layers":
+    [
+            {
+                "palette":
+                [
+                    {"block": "minecraft:void_air"}
+                ]
+                }
+    ],
+    "generators":
+    [
+        {
+            "generator": "empty",
+            "min": -1,
+            "max": 30
+        }
+    ],
+    "biomeZoom": 9,
+    "biomeStyle": {"style": "SIMPLEX"},
+    "wall": {
+        "style": {"style": "STATIC"},
+        "palette": [
+            {"block": "minecraft:obsidian"},
+            {"block": "minecraft:crying_obsidian"}
+        ]
+    }
+}

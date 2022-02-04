@@ -1,0 +1,88 @@
+{
+    "name": "Fungi Marsh",
+    "rarity": 1,
+    "color": "#6A9140",
+    "derivative": "SWAMP",
+    "vanillaDerivative": "SWAMP",
+    "children": ["endfungi"],
+    "generators": [{
+        "min": 10,
+        "max": 15,
+        "generator": "empty"
+    }],
+    "layers": [
+        {
+            "style": {"style": "IRIS"},
+            "zoom": 0.5,
+            "palette": [
+                {
+                    "weight": 3,
+                    "block": "minecraft:grass_block"
+                },
+                {"block": "minecraft:podzol"},
+                {
+                    "weight": 4,
+                    "block": "minecraft:grass_block"
+                }
+            ]
+        },
+        {"palette": [{"block": "minecraft:dirt"}]},
+        {
+            "minHeight": 1,
+            "maxHeight": 3,
+            "palette": [
+                {"block": "minecraft:dirt"},
+                {"block": "minecraft:coarse_dirt"}
+            ]
+        },
+        {
+            "minHeight": 6,
+            "maxHeight": 111,
+            "style": {"style": "STATIC"},
+            "palette": [
+                {"block": "minecraft:end_stone"}
+            ]
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.003,
+            "variance": {"style": "STATIC"},
+            "zoom": 0.02,
+            "palette": [
+                {"block": "minecraft:brown_mushroom"},
+                {"block": "minecraft:red_mushroom"}
+            ],
+            "style": {"style": "STATIC"}
+        },
+        {
+            "chance": 0.122,
+            "variance": {"style": "STATIC"},
+            "zoom": 0.2,
+            "palette": [
+                {"block": "minecraft:large_fern"},
+                {"block": "minecraft:tall_grass"}
+            ],
+            "style": {"style": "STATIC"}
+        },
+        {
+            "chance": 0.142,
+            "variance": {"style": "STATIC"},
+            "zoom": 0.3,
+            "palette": [
+                {"block": "minecraft:grass"},
+                {"block": "minecraft:fern"}
+            ],
+            "style": {"style": "STATIC"}
+        }
+    ],
+    "biomeZoom": 9,
+    "biomeStyle": {"style": "SIMPLEX"},
+    "wall": {
+        "style": {"style": "STATIC"},
+        "palette": [
+            {"block": "minecraft:obsidian"},
+            {"block": "minecraft:crying_obsidian"}
+        ]
+    }
+}

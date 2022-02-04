@@ -1,0 +1,86 @@
+{
+    "name": "End Fungi Floods",
+    "vanillaDerivative": "THE_END",
+    "derivative": "THE_END",
+    "color": "#996DD8",
+    "customDerivitives": [
+        {
+            "id": "Fungi",
+            "foliageColor": "#996DD8",
+            "waterColor": "#736D87",
+            "grassColor": "#996DD8",
+            "category": "extreme_hills"
+        }
+    ],
+    "layers":
+    [
+        {
+                "palette":
+                [
+                    {"block": "minecraft:end_stone"},{"block": "minecraft:crying_obsidian"},{"block": "minecraft:water","weight": 10}
+                ]
+                },
+                {
+                    "minHeight": 0,
+                    "maxHeight": 111,
+                    "palette": [{"block": "minecraft:end_stone"}]
+                }
+
+    ],
+    "generators":
+    [
+        {
+            "generator": "empty",
+            "min": 10,
+            "max": 14
+        }
+    ],
+        "objects":
+    [
+        {
+            "chance": 0.4,
+            "bottom": true,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "max": 360,
+                    "min": 0
+                }
+            },
+            "place":
+            [
+                "fungi/shroom1",
+                "fungi/shroom2",
+                "fungi/shroom3"
+            ]
+        },
+        {
+            "chance": 0.01,
+            "bottom": true,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "max": 360,
+                    "min": 0
+                }
+            },
+            "place":
+            [
+                "fungi/hovel"
+            ]
+            }
+    ],
+    "biomeZoom": 9,
+    "biomeStyle": {"style": "SIMPLEX"},
+    "wall": {
+        "style": {"style": "STATIC"},
+        "palette": [
+            {"block": "minecraft:obsidian"},
+            {"block": "minecraft:crying_obsidian"}
+        ]
+    }
+}

@@ -1,0 +1,71 @@
+{
+    "name": "End Plains",
+    "vanillaDerivative": "THE_END",
+    "derivative": "THE_END",
+    "color": "#996DD8",
+    "customDerivitives": [
+        {
+            "id": "plains",
+            "foliageColor": "#996DD8",
+            "waterColor": "#736D87",
+            "grassColor": "#996DD8",
+            "category": "extreme_hills"
+        }
+    ],
+    "layers":
+    [
+        {
+
+                "palette":
+                [
+                    {"block": "minecraft:end_stone"}
+                ]
+                },
+                                {
+
+                    "minHeight": 2,
+                    "maxHeight": 30,
+                    "palette": [{"block": "minecraft:end_stone"}]
+                },
+                {
+
+                    "minHeight": 2,
+                    "maxHeight": 81,
+                    "palette": [{"block": "minecraft:end_stone","weight": 1000},{"block": "minecraft:diamond_ore","weight": 1},{"block": "minecraft:emerald_ore","weight": 6}]
+                }
+    ],
+    "generators":
+    [
+        {
+
+            "generator": "empty",
+            "min": -2,
+            "max": 5
+        }
+    ],
+        "objects":
+    [
+        {
+            "chance": 1,
+            "bottom": true,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "max": 360,
+                    "min": 0
+                }
+            },
+            "place":
+            [
+                "misc/pillar1",
+                "misc/pillar2",
+                "misc/endplant1",
+                "misc/endplant2",
+                "misc/endplant3"
+            ]
+
+        }
+    ]
+}
